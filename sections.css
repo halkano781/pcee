@@ -303,7 +303,9 @@ h3{
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2)
 }
 @media(max-width:700px){
- 
+ .products > .row{
+    flex-direction: column;
+  }
 }
 
 /*----- after sale services -------*/
