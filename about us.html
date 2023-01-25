@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="sections.css">
+        <!--fonts below-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        
+        <nav class="navigation-bar">
+            <h1 class="company-name">PCEE</h1>
+            <div class="nav-links" id="navlinks">
+                
+                <span class="material-symbols-outlined" onclick="hidemenu()"> close</span>
+                <ul>
+                    <li><a href="/sections page/sections.html">Home</a></li>
+                    <li><a href="products">Products</a></li>
+                    <li><a href="/sections page/services.html">Services</a></li>
+                    <li><a href="/signin.html">Login</a></li>
+                    <li><a href="contact">Contact us</a></li>
+                </ul>
+                </div>
+                <span class="material-symbols-outlined" onclick="showmenu()">menu</span>
+        </nav>
+
+         <!--about us page-->
+          <section class="sub-header">         
+              <h2>ABOUT US</h2>
+          </section>
+
+                <!------- about us content ------>
+                <section class="about-us">
+                    <div class="row-abs">
+                        <div class="about-col">
+                            <h1>Who are we </h1>
+                            <p>Portable car engineering environment (PCEE) limited is a virtual garage that uses the latest technology in the automotive industry to achieve all the automotive needs under one platform by monitoring all the vehicle data remotely in real time. We process the data and use it to provide predictive, prescriptive and reactive maintenance for all the vehicles regardless of model, make and year.</p>
+                           <a href=""></a>
+                        </div>
+                           
+                        <div class="row-abs">
+                            <div class="about-col">
+                               <h1>Our commitment</h1>
+                               <p>We are committed to ensuring that no vehicle breaks down by providing timely repairs to car owners anytime anywhere. We strive to make sure that car owners are prepared ahead of time about upcoming car expenses hence have them prepare financially to address them. We believe that time is money and car owners can save money by avoiding unnecessary car repair expenses as well as ensuring maximum profits that can be caused by time wasted during car downtime. A well maintained vehicle can help reduce the carbon footprint and at the end of the day that’s what mother earth needs </p> 
+                            </div>
+                        
+                            <div class="row-abs">
+                                <div class="about-col">
+                                   <h1>why choose us</h1>
+                                <ul>
+                                    <li>We use genuine spare parts for all our services</li>
+                                    <li>We handpick our mechanics based on their experience and train them annually to ensure they are up to date with the ever changing automotive industry</li>
+                                    <li>Standardized and fair pricing for all our services irregardless of location and time</li>
+                                    <li>With us you can have access to everything your vehicle needs all under one platform in the palm of your hands</li>
+                                    <li>24/7/365 customer care services</li>
+                                    <li>We are confident in our service provision and are offering a 6000miles/6months(whichever comes first) warranty and willing to cover the expenses for repairs caused by an error on our side</li>
+                                </ul>
+    
+                                </div>
+                    </div>
+
+
+
+
+                 </section>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">maintainance status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">pcee adapter</a></li>
+                            <li><a href="#">trackers</a></li>
+                            <li><a href="#">biometrics</a></li>
+                            <li><a href="#">spare parts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/people/Portable-car-engineering-environment-PCEE/100083288831726/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+
+
+
+
+          <script>
+            //togle menu for smartphones 
+            var navlinks =document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+            function hidemenu(){
+                navlinks.style.right = "0px"
+            }  
+         </script>
+
+          <script src="jscript.js"></script>
+    </body>
+</html>
