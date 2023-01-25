@@ -304,7 +304,7 @@ h3{
 }
 @media(max-width:700px){
   .products > p{
-    width: 82%;
+    width: auto;
   }
 }
 
