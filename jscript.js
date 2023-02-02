@@ -1,3 +1,4 @@
+
 //togle menu for smartphones 
 var navlinks = document.getElementById("navlinks");
 
@@ -10,3 +11,9 @@ function hidemenu() {
     navlinks.style.display = "none";
     navlinks.style.right = "-200px";
 }
+ //avoid menu being opened onload
+ window.addEventListener("load", function() {
+    navlinks.style.display = "none";
+    navlinks.style.right = "-200px";
+});
+
