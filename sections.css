@@ -172,7 +172,7 @@ body{
        .nav-links {
         background: rgb(247, 230, 4);
         position: absolute;
-        width: 25vh;
+        width: 100vh;
         height: 100vh;
         top: 0;
         right: 0px;
