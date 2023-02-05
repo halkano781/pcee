@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="/sections.css">
+        <!--fonts below-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        
+        <nav class="navigation-bar">
+            <h1 class="company-name">PCEE</h1>
+            <div class="nav-links" id="navlinks">
+                
+                <span class="material-symbols-outlined" onclick="hidemenu()"> close</span>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="products">Products</a></li>
+                    <li><a href="/sections page/services.html">Services</a></li>
+                    <li><a href="/login page/signin.html">Login</a></li>
+                    <li><a href="/sections page/contact us.html"></a></li>
+                </ul>
+                </div>
+                <span class="material-symbols-outlined" onclick="showmenu()">menu</span>
+        </nav>
+
+         <!--contact us page-->
+          <div class="contact-container">
+            <form onsubmit="sendEmail() ; reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message"  rows="4" placeholder="How can we help you"></textarea>
+                <button type="submit">Send</button>
+            </form>
+          </div>
+
+
+        <!--footer-->
+        
+
+
+
+
+
+       <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+          <script>
+             function sendEmail(){
+                                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "halkanfrog36@gmail.com",
+                    Password : "B4AF20462E5ACF75F7B0BA0776D6E2A09EC1",
+                    To : 'incognitoras@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New contact form enquiry",
+                    Body : "Name: " + document.getElementById("name").value
+                    +"<br> Email: " + document.getElementById("email").value
+                    +"<br> Phone no: " + document.getElementById("phone").value
+                    +"<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Message sent sucessfully")
+                );
+             }
+         </script>
+
+          <script src="jscript.js"></script>
+    </body>
+</html>
